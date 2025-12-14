@@ -34,7 +34,7 @@ def clean_data():
     copy = df.copy()
     
     mean = copy[copy['exam_score'] != 200]['exam_score'].mean()
-    copy['exam_score'] = copy['exam_score'].replace(200, mean)
+    copy['e xam_score'] = copy['exam_score'].replace(200, mean)
 
     copy = copy.dropna(subset=['student_id'])
     copy = copy.replace(['unknown', 'varies', ''], np.nan)
